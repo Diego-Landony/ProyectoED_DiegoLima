@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(java:*)",
+      "Bash(dpkg:*)",
+      "Bash(source:*)",
+      "Bash(sdk list:*)",
+      "Bash(bash -c 'source \"\"$HOME/.sdkman/bin/sdkman-init.sh\"\" && sdk list java 2>/dev/null | grep -E \"\"installed|local\"\"')",
+      "Bash(bash -c 'source \"\"$HOME/.sdkman/bin/sdkman-init.sh\"\" && sdk uninstall java 11.0.25-amzn <<< \"\"Y\"\"')",
+      "Bash(bash -c 'source \"\"$HOME/.sdkman/bin/sdkman-init.sh\"\" && sdk install java 21.0.6-tem <<< \"\"Y\"\"')",
+      "Bash(bash -c 'source \"\"$HOME/.sdkman/bin/sdkman-init.sh\"\" && java -version')",
+      "Bash(bash -c:*)",
+      "Bash(javac -d out src/algorithms/*.java src/utils/*.java src/benchmark/*.java)"
+    ]
+  }
+}

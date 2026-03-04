@@ -10,7 +10,11 @@
       "Bash(bash -c 'source \"\"$HOME/.sdkman/bin/sdkman-init.sh\"\" && sdk install java 21.0.6-tem <<< \"\"Y\"\"')",
       "Bash(bash -c 'source \"\"$HOME/.sdkman/bin/sdkman-init.sh\"\" && java -version')",
       "Bash(bash -c:*)",
-      "Bash(javac -d out src/algorithms/*.java src/utils/*.java src/benchmark/*.java)"
+      "Bash(javac -d out src/algorithms/*.java src/utils/*.java src/benchmark/*.java)",
+      "Bash(pandoc --version)",
+      "Bash(pandoc Documentacion_Tecnica.md -o Documentacion_Tecnica.pdf --pdf-engine=xelatex)",
+      "Bash(pandoc Documentacion_Tecnica.md -o Documentacion_Tecnica.pdf --pdf-engine=pdflatex -V geometry:margin=2.5cm)",
+      "Bash(pandoc Documentacion_Tecnica.md -o Documentacion_Tecnica.html --self-contained --metadata title=\"Documentación Técnica\" -s)"
     ]
   }
 }

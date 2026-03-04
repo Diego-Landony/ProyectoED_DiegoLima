@@ -1,3 +1,19 @@
+<style>
+  @page { size: letter; margin: 2.5cm; }
+  body { font-family: "Segoe UI", Arial, sans-serif; font-size: 11pt; line-height: 1.5; color: #222; }
+  h1 { font-size: 20pt; color: #1a1a2e; border-bottom: 2px solid #1a1a2e; padding-bottom: 8px; page-break-after: avoid; }
+  h2 { font-size: 15pt; color: #16213e; margin-top: 25px; border-bottom: 1px solid #ccc; padding-bottom: 4px; page-break-after: avoid; }
+  h3 { font-size: 12pt; color: #0f3460; margin-top: 15px; page-break-after: avoid; }
+  p, ul, ol { page-break-before: avoid; }
+  img { max-width: 80%; display: block; margin: 10px auto; page-break-inside: avoid; }
+  table { width: 100%; border-collapse: collapse; font-size: 10pt; margin: 15px 0; page-break-inside: avoid; }
+  th { background-color: #1a1a2e; color: white; padding: 6px; text-align: left; }
+  td { border: 1px solid #ccc; padding: 5px 7px; }
+  tr:nth-child(even) { background-color: #f2f2f2; }
+  code { background-color: #f0f0f0; padding: 2px 5px; border-radius: 3px; font-size: 10pt; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 20px 0; }
+</style>
+
 # Documentación Técnica — Algoritmos Iterativos vs. Recursivos
 
 **Nombre:** Diego Lima

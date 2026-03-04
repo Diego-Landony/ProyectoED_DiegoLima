@@ -8,7 +8,7 @@
 **Asignatura:** Estructura de Datos
 **Catedrático:** Ing. Brandon Chitay
 **Universidad:** Da Vinci de Guatemala
-**Fecha:** Marzo 2026
+**Fecha:**  Marzo 3 del 2026
 
 ---
 
@@ -226,25 +226,67 @@ Cada llamada recursiva se apila en la memoria hasta que llegue al caso base. Si 
 
 ## 8. Referencias
 
-- Cormen, T. et al. *Introduction to Algorithms*, 4th Edition. MIT Press.
-- Oracle. *Java SE Documentation — System.nanoTime()*
-- Sedgewick, R. & Wayne, K. *Algorithms*, 4th Edition. Addison-Wesley.
+- Oracle. *Java SE 21 — System.nanoTime()* — https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/System.html#nanoTime()
+- GeeksforGeeks. *Bubble Sort Algorithm* — https://www.geeksforgeeks.org/bubble-sort-algorithm/
+- GeeksforGeeks. *Program for Fibonacci Numbers* — https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
+- Baeldung. *Recursion in Java* — https://www.baeldung.com/java-recursion
+- Big-O Cheat Sheet — https://www.bigocheatsheet.com/
 
 
 
 
 <style>
   @page { size: letter; margin: 2.5cm; }
-  body { font-family: "Segoe UI", Arial, sans-serif; font-size: 11pt; line-height: 1.5; color: #222; }
+  body { font-family: "Segoe UI", Arial, sans-serif; font-size: 11pt; line-height: 1.6; color: #222; }
+
+  /* Títulos */
   h1 { font-size: 20pt; color: #1a1a2e; border-bottom: 2px solid #1a1a2e; padding-bottom: 8px; page-break-after: avoid; }
-  h2 { font-size: 15pt; color: #16213e; margin-top: 25px; border-bottom: 1px solid #ccc; padding-bottom: 4px; page-break-after: avoid; }
-  h3 { font-size: 12pt; color: #0f3460; margin-top: 15px; page-break-after: avoid; }
+  h2 { font-size: 15pt; color: #16213e; margin-top: 30px; border-bottom: 1px solid #ccc; padding-bottom: 4px; page-break-after: avoid; }
+  h3 { font-size: 12pt; color: #0f3460; margin-top: 18px; page-break-after: avoid; }
+
+  /* Texto */
   p, ul, ol { page-break-before: avoid; }
-  img { max-width: 80%; display: block; margin: 10px auto; page-break-inside: avoid; }
-  table { width: 100%; border-collapse: collapse; font-size: 10pt; margin: 15px 0; page-break-inside: avoid; }
-  th { background-color: #1a1a2e; color: white; padding: 6px; text-align: left; }
-  td { border: 1px solid #ccc; padding: 5px 7px; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 25px 0; }
+
+  /* Imágenes (gráficas) */
+  img { max-width: 85%; display: block; margin: 12px auto; page-break-inside: avoid; }
+
+  /* Tablas */
+  table { width: 100%; border-collapse: collapse; font-size: 9.5pt; margin: 15px 0; page-break-inside: avoid; }
+  th { background-color: #1a1a2e; color: white; padding: 7px 8px; text-align: left; }
+  td { border: 1px solid #ccc; padding: 5px 8px; }
   tr:nth-child(even) { background-color: #f2f2f2; }
-  code { background-color: #f0f0f0; padding: 2px 5px; border-radius: 3px; font-size: 10pt; }
-  hr { border: none; border-top: 1px solid #ddd; margin: 20px 0; }
+
+  /* Código inline */
+  code { background-color: #f0f0f0; padding: 2px 5px; border-radius: 3px; font-size: 9.5pt; }
+
+  /* Bloques de código */
+  pre {
+    background-color: #1e1e1e;
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin: 10px 0;
+    page-break-inside: avoid;
+    overflow-x: auto;
+  }
+  pre code {
+    background-color: transparent;
+    color: #d4d4d4;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 9pt;
+    padding: 0;
+    line-height: 1.5;
+  }
+
+  /* Citas) */
+  blockquote {
+    background-color: #f0f4ff;
+    border-left: 4px solid #3b5998;
+    margin: 12px 0;
+    padding: 10px 16px;
+    border-radius: 0 6px 6px 0;
+    font-size: 10.5pt;
+    page-break-inside: avoid;
+  }
+  blockquote strong { color: #1a1a2e; }
 </style>

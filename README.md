@@ -90,6 +90,12 @@ Al finalizar, exporta todos los resultados a `resultados/tiempos.csv`.
 
 ---
 
+## Documentación técnica
+
+[Documentacion_Tecnica.pdf](Documentacion_Tecnica.pdf)
+
+---
+
 ## Video de demostración
 
-*(Enlace pendiente)*
+[Ver video](https://youtu.be/2TGqv7r0UgU)

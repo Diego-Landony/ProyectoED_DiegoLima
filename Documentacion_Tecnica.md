@@ -29,14 +29,14 @@ Big-O mide cómo crece el tiempo de un algoritmo cuando la entrada (n) aumenta:
 **Fibonacci** — Calcula el n-ésimo término (0, 1, 1, 2, 3, 5, 8...). El iterativo usa dos variables que se desplazan en un ciclo. El recursivo llama a `fib(n-1) + fib(n-2)`, repitiendo cálculos y generando un árbol exponencial. Iterativo: **O(n)**, recursivo: **O(2ⁿ)**.
 
 > **Explicación con mis palabras (Fibonacci recursivo):**
-> Básicamente la función se llama a sí misma dos veces: una para calcular el número anterior y otra para el que está antes de ese. El problema es que eso se repite una y otra vez. Por ejemplo, si le pido `fib(5)`, para calcularlo necesita `fib(4)` y `fib(3)`. Pero `fib(4)` a su vez necesita `fib(3)` y `fib(2)`, y ahí ya está calculando `fib(3)` dos veces. Mientras más grande es n, más se repiten los cálculos y por eso se vuelve lentísimo. Es como si para buscar algo en tu casa, cada vez que abres un cajón te olvidaras de lo que ya revisaste y volvieras a empezar.
+> Básicamente la función se llama a sí misma dos veces: una para calcular el número anterior y otra para el que está antes de ese. El problema es que eso se repite una y otra vez. Por ejemplo, si le pido `fib(5)`, para calcularlo necesita `fib(4)` y `fib(3)`. Pero `fib(4)` a su vez necesita `fib(3)` y `fib(2)`, y ahí ya está calculando `fib(3)` dos veces. Mientras más grande es n, más se repiten los cálculos y por eso se vuelve lentísimo. Es como si al buscar algo en una casa, cada vez que se abre un cajón se olvidara lo que ya se revisó y se volviera a empezar.
 
 **Búsqueda Lineal** — Busca un valor recorriendo el arreglo. El iterativo usa un `for`; el recursivo avanza el índice en cada llamada. Ambos son **O(n)**.
 
 **Burbuja** — Ordena comparando e intercambiando pares adyacentes. El iterativo usa dos ciclos anidados; el recursivo hace una pasada por llamada y reduce n en 1. Ambos son **O(n²)**.
 
 > **Explicación con mis palabras (Burbuja iterativo):**
-> Imaginate que tenés una fila de números desordenados. Lo que hace burbuja es comparar de dos en dos: agarra el primero y el segundo, si el primero es más grande los intercambia, si no los deja. Luego pasa al segundo y tercero, y así hasta el final. Cuando termina esa pasada, el número más grande ya quedó al final. Entonces repite todo el proceso pero ignorando el último (que ya está en su lugar). Así va "burbujeando" los más grandes hacia la derecha en cada pasada hasta que todo queda ordenado. Por eso es O(n²): tiene que hacer n pasadas y en cada una revisar hasta n elementos.
+> Se tiene una fila de números desordenados. Lo que hace burbuja es comparar de dos en dos: se agarra el primero y el segundo, si el primero es más grande se intercambian, si no se dejan. Luego se pasa al segundo y tercero, y así hasta el final. Cuando termina esa pasada, el número más grande ya quedó al final. Entonces se repite todo el proceso pero ignorando el último (que ya está en su lugar). Así se van "burbujeando" los más grandes hacia la derecha en cada pasada hasta que todo queda ordenado. Por eso es O(n²): se tienen que hacer n pasadas y en cada una revisar hasta n elementos.
 
 ---
 
@@ -189,14 +189,14 @@ Las dos curvas son casi idénticas y forman una parábola. De mil a diez mil ele
 
 | Algoritmo | Versión | Big-O experimental | Big-O teórico | ¿Coincide? | Justificación |
 |---|---|---|---|---|---|
-| Factorial | Iterativo | O(n) | O(n) | Sí | Gráfica plana, el tiempo apenas cambia al aumentar n |
-| Factorial | Recursivo | O(n) | O(n) | Sí | Misma tendencia plana, ambos hacen n operaciones |
-| Fibonacci | Iterativo | O(n) | O(n) | Sí | Se mantiene cerca de cero incluso en n=30 |
-| Fibonacci | Recursivo | O(2ⁿ) | O(2ⁿ) | Sí | La curva explota a partir de n=25, crecimiento exponencial |
-| Búsqueda Lineal | Iterativo | O(n) | O(n) | Sí | El tiempo sube proporcional al tamaño del arreglo |
-| Búsqueda Lineal | Recursivo | O(n) | O(n) | Sí | Misma tendencia lineal ascendente que el iterativo |
-| Burbuja | Iterativo | O(n²) | O(n²) | Sí | Parábola: 10x más datos = ~100x más tiempo |
-| Burbuja | Recursivo | O(n²) | O(n²) | Sí | Curva casi idéntica al iterativo, misma parábola |
+| A1 - Factorial | Iterativo | O(n) | O(n) | Sí | Gráfica plana, el tiempo apenas cambia al aumentar n |
+| A1 - Factorial | Recursivo | O(n) | O(n) | Sí | Misma tendencia plana, ambos hacen n operaciones |
+| A2 - Fibonacci | Iterativo | O(n) | O(n) | Sí | Se mantiene cerca de cero incluso en n=30 |
+| A2 - Fibonacci | Recursivo | O(2ⁿ) | O(2ⁿ) | Sí | La curva explota a partir de n=25, crecimiento exponencial |
+| A3 - Búsqueda Lineal | Iterativo | O(n) | O(n) | Sí | El tiempo sube proporcional al tamaño del arreglo |
+| A3 - Búsqueda Lineal | Recursivo | O(n) | O(n) | Sí | Misma tendencia lineal ascendente que el iterativo |
+| A4 - Burbuja | Iterativo | O(n²) | O(n²) | Sí | Parábola: 10x más datos = ~100x más tiempo |
+| A4 - Burbuja | Recursivo | O(n²) | O(n²) | Sí | Curva casi idéntica al iterativo, misma parábola |
 
 Todos los resultados experimentales coinciden con la teoría.
 
